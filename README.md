@@ -1,2 +1,2 @@
-# irs-990-scraper
-Node.js scraper for IRS 990 data
+# irs-990-extract
+Use Node.js to extract IRS 990 data
