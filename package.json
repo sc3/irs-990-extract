@@ -2,9 +2,16 @@
   "name": "irs-990-extract",
   "version": "0.1",
   "description": "Download and extract IRS 990 data to json files.",
-  "author": "Mathew Woodyard",
-  "contributors": [{
-    "name": "Marcin Ufniarz"
+  "contributors": [
+    {
+      "name": "Mathew Woodyard",
+    },
+    {
+      "name": "Marcin Ufniarz",
+    },
+    {
+      "name": "Sophia Hudson"
+    }
   }],
   "repository": {
     "type": "git",
@@ -16,5 +23,14 @@
   "dependencies": { 
     "adm-zip": "0.4.7"
   },
- "license": "GPLv3"
+  "devDependencies" : {
+   "gulp": "latest",
+   "gulp-debug": "latest",
+   "gulp-babel": "latest",
+   "gulp-jasmine": "latest",
+   "jasmine-reporters": "latest",
+   "gulp-eslint": "latest",
+   "gulp-task-listing": "latest"
+},
+  "license": "GPLv3"
 }
