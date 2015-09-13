@@ -1,5 +1,6 @@
 .project
 data/*
+target/*
 
 # Logs
 logs
