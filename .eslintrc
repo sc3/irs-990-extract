@@ -1,0 +1,368 @@
+{
+  "rules": {
+    // Disallow or enforce trailing commas (recommended)
+    "comma-dangle": [2, "never"],
+
+    // Disallow assignment in condition expressions (recommended)
+    "no-cond-assign": [2, "except-parens"],
+
+    // Disallow use of console in the node environment (recommended)
+    "no-console": 2,
+
+    // Disallow use of constant expressions in conditions (recommended)
+    "no-constant-condition": 2,
+
+    // Disallow control characters in regular expressions (recommended)
+    "no-control-regex": 2,
+
+    // Disallow control characters in regular expressions (recommended)
+    "no-debugger": 2,
+
+    // Disallow duplicate arguments in functions (recommended)
+    "no-dupe-args": 2,
+
+    // Disallow duplicate keys when creating object literals (recommended)
+    "no-dupe-keys": 2,
+
+    // Disallow duplicate case label
+    "no-duplicate-case": 2,
+
+    // Disallow the use of empty character classes in regular expressions (recommended),
+    "no-empty-character-class": 2,
+
+    // Disallow empty statements (recommended)
+    "no-empty": 2,
+
+    // Disallow assigning to the exception in a 'catch' block (recommended)
+    "no-ex-assign": 2,
+
+    // Disallow double-negation boolean casts in a boolean context (recommended)
+    "no-extra-boolean-cast": 2,
+
+    // Disallow unnecessary parentheses
+    "no-extra-parens": [0, "all"],
+
+    // Disallow unnecessary semicolons (recommended)
+    "no-extra-semi": 2,
+
+    // Disallow overwriting functions written as function declarations (recommended)
+    "no-func-assign": 2, 
+
+    // Disallow function or variable declarations in nested blocks (recommended)
+    "no-inner-declarations": [2, "both"],
+
+    // Disallow invalid regular expression strings in the 'RegExp' constructor (recommended)
+    "no-invalid-regexp": 2,
+
+    // Disallow irregular whitespace outside of strings and comments (recommended)
+    "no-irregular-whitespace": 2,
+
+    // Disallow negation of the left operand in an 'in' expression (recommended)
+    "no-negated-in-lhs": 2,
+
+    // Disallow use of object properties of the global object (Math and JSON) as functions (recommended)
+    "no-obj-calls": 2,
+
+    // Disallow multiple spaces in a regular expression literal (recommended)
+    "no-regex-spaces": 2, 
+
+    // Disallow sparse arrays (recommended)
+    "no-sparse-arrays": 2,
+
+    // Disallow unreachable statements after a return, throw, continue, or break statement (recommended)
+    "no-unreachable": 1,
+
+    // Disallow comparisons with the value 'NaN' (recommended)
+    "use-isnan": 2,
+
+    // Ensure JSDoc comments are valid
+    "valid-jsdoc": [2, {
+      "prefer": {},
+      "requireReturn": true,
+      "requireParamDescription": true,
+      "requireReturnDescription": true
+    }],
+
+    // Ensure that the results of typeof are compared against a valid string (recommended)
+    "valid-typeof": 2,
+
+    // Avoid code that looks like two expressions but is actually one
+    "no-unexpected-multiline": 2,
+    
+    // Enforces getter/setter pairs in objects
+    "accessor-pairs": [2, {
+      getWithoutSet: true,
+      setWithoutGet: true
+    }],
+
+    // Treat 'var' statements as if they were block scoped
+    "block-scoped-var": 2,
+
+    // Specify the maximum cyclomatic complexity allowed in the program
+    "complexity": [1, 10],
+
+    // Require 'return' statements to either always or never specify values
+    "consistent-return": 1,
+
+    // Specify curly brace conventiosn for all control statements
+    "curly": [2, "all"],
+
+    // Require 'default' case in 'switch' statements
+    "default-case": 2,
+
+    // Encorages use of dot notation whenever possible
+    "dot-notation": [2, {
+      "allowKeywords": true,
+      "allowPattern": ""
+    }],
+
+    // Enforces consistent newlines before or after dots
+    "dot-location": [2, "property"],
+
+    // Require  use of '===' and '!=='
+    "eqeqeq": [2, "allow-null"],
+
+    // Make sure 'for-in' loops have an 'if' statement
+    "guard-for-in": 2,
+
+    // "Disallow the use of 'alert', 'confirm', and 'prompt'
+    "no-alert": 2,
+
+    // Disallow use of 'arguments.caller' or 'arguments.callee'
+    "no-caller": 2,
+
+    // Disallow division operators explicitly at beginning of regular expressions
+    "no-div-regex": 2, 
+
+    // Disallow 'else' after a 'return' in an 'if'
+    "no-else-return": 2, 
+
+    // Disallow use of labels for anythinig other than loops and switches
+    "no-empty-label": 2,
+
+    // Disallow comparisons with null without a type-checking operator
+    "no-eq-null": 2,
+
+    // Disallow use of 'eval()'
+    "no-eval": 2,
+
+    // Disallow adding to native types
+    "no-extend-native": [2, {
+      "exceptions": []
+    }],
+
+    // Disallow unnecessary function binding
+    "no-extra-bind": 2,
+
+    // Disallow fallthrough of 'case' statements (recommended)
+    "no-fallthrough": 2,
+
+    // Disallow the use of leading or trailing decimal points in numeric literals.
+    "no-floating-decimal": 2,
+
+    // Disallow the type conversiosn with shorter notations
+    "no-implicit-coercion": [2, {
+      "boolean": true,
+      "number": true,
+      "string": true
+    }],
+
+    // Disallow use of eval()-like methods
+    "no-implied-eval": 2,
+
+    // Disallow 'this' keyword outside of classes or class-like objects
+    "no-invalid-this": 1,
+
+    // Disallow usage of __iterator__ property
+    "no-iterator": 2,
+
+    // Disallow use of labeled statements
+    "no-labels": 2, 
+
+    // Disallow unnecessary nested blocks
+    "no-lone-blocks": 2,
+
+    // Disallow creation of functions within loops
+    "no-loop-func": 2,
+
+    // Disallow use of multiple spaces
+    "no-multi-spaces": [2, {
+      "exceptions": {}
+    }],
+
+    // Disallow use of multiline strings
+    "no-multi-str": 2,
+
+    // Disallow reassignments of native objects
+    "no-native-reassign": [2, {
+      "exceptions": []
+    }],
+
+    // Disallow use of new operator for 'Function' object
+    "no-new-func": 2,
+
+    // Disallows creating enw instances of 'String', 'Number', and 'Boolean'
+    "no-new-wrappers": 2,
+
+    // Disallow use of the 'new' operator when not part of an assignment or comparison
+    "no-new": 0,
+
+    // Disallow use of octal escape sequences in string literals, such as 'var foo = "Copyright \251";'
+    "no-octal-escape": 2,
+
+    // Disallow use of octal literals (recommended)
+    "no-octal": 2, 
+
+    // Disallow reassignment of function parameters
+    "no-param-reassign": [2, {
+      "props": true
+    }],
+
+    // Disallow use of 'process.env'
+    "no-process-env": 2,
+
+    // Disallow usage of __proto__ property
+    "no-proto": 2,
+
+    // Disallow declaring the same variable more than once (recommended)
+    "no-redeclare": [2, {
+      "builtinGlobals": true
+    }],
+
+    // Disallow use of assignment in 'return' statement
+    "no-return-assign": [2, "except-parens"],
+
+    // Disallow use of 'javascript:' urls
+    "no-script-url": 2,
+
+    // Disallow comparisons where both sides are exactly the same
+    "no-self-compare": 2,
+
+    // Disallow use of the comma operator
+    "no-sequences": 2,
+
+    // Restrict what can be thrown as an exception
+    "no-throw-literal": 2,
+
+    // Disallow usage of expressions in statement position
+    "no-unused-expressions": 2,
+
+    // Disallow unnecessary '.call()' and '.apply()'
+    "no-useless-call": 2, 
+
+    // Disallow use of the 'void' operator
+    "no-void": 2,
+
+    // Disallow usage of configurable warning terms in comments -e.g. 'TODO' or 'FIXME'
+    "no-warning-comments": [2, {
+      "terms": [],
+      "location": "start"
+    }],
+
+    // Disallow use of the 'with' statement
+    "no-with": 2,
+
+    // Require use of the second argument for 'parseInt()'
+    "radix": 2,
+
+    // Require declaration of all vars at the top of their containing scope
+    "vars-on-top": 2, 
+
+    // Require immediate function invocation to be wrapped in parentheses
+    "wrap-iife": [2, "outside"],
+
+    // Require or disallow Yoda conditions
+    "yoda": [2, "never", {
+      "exceptRange": true 
+    }],
+
+    // Controls location of Use Strict Directives
+    "strict": [2, "global"],
+
+    // Enforce or disallow variable initializations at definition
+    "init-declarations": [2, "never"],
+
+    // Disallow the catch clause parameter name being the same as a variable in the outer scope
+    "no-catch-shadow": 2, 
+
+    // Disallow deletion of variables (recommended)
+    "no-delete-var": 2, 
+
+    // Disallow labels that share a name with a variable
+    "no-label-var": 2, 
+
+    // Disallow shadowing of names such as 'arguments'
+    "no-shadow-restricted-names": 2, 
+
+    // Disallow declaration of variables already declared in the outer scope
+    "no-shadow": 2, 
+
+    // Disallow use of undefined when initializing variables (recommended)
+    "no-undef-init": 2, 
+
+    // Disallow use of undeclared variables unless mentioned in a /*global */ block (recommended)
+    "no-undef": 1, 
+
+    // Disallow use of 'undefined' variable
+    "no-undefined": 1, 
+
+    // Disallow declaration of variables that are not used in the code (recommended)
+    "no-unused-vars": [2, {
+      "vars": "all",
+      "args": "all"
+    }],
+    
+    // Disallow use of variables before they are defined
+    "no-use-before-define": [2, "nofunc"],
+
+    // Enforce 'return' after a callback
+    "callback-return": 2, 
+
+    // Enforce error handling in callbacks
+    "handle-callback-err": 2,
+
+    // Disallow mixing regular variable and required declarations
+    "no-mixed-requires": [2, true],
+
+    // Disallow use of 'new' operator with the 'require' function
+    "no-new-require": 2,
+
+    // Disallow string concatenation with '__dirname' and '__filename'
+    "no-path-concat": 2
+  },
+  ecmaFeatures: {
+    "arrowFunctions": true,
+    "binaryLiterals": true,
+    "blockBindings": true,
+    "classes": true,
+    "defaultParams": true,
+    "destructuring": true,
+    "forOf": true,
+    "generators": true,
+    "modules": true,
+    "objectLiteralComputedProperties": true,
+    "objectLiteralDuplicateProperties": true,
+    "objectLiteralShorthandMethods": true,
+    "objectLiteralShorthandProperties": true,
+    "octalLiterals": true,
+    "regexUFlag": true,
+    "regexYFlag": true,
+    "restParams": true,
+    "spread": true,
+    "superInFunctions": true,
+    "templateStrings": true,
+    "unicodeCodePointEscapes": true,
+    "globalReturn": true,
+    "experimentalObjectRestSpread": true
+  },
+  "env": {
+    "browser": false,
+    "node": true
+  },
+  "globals": {
+    "console": true
+  },
+  "plugins": [
+    "babel"
+  ]
+}
