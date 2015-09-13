@@ -29,8 +29,8 @@ gulp.task('lint', ['clean'],  function() {
 });
 
 /** 
- *  * Run jasmine specs
- *   */
+ * Run jasmine specs
+ */
 gulp.task('test', ['compile'], function() {
   var stream = gulp.src("./test/jasmine/specs/**/*Spec.js").pipe(jasmine({
     'verbose': true,
