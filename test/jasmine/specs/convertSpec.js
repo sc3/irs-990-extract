@@ -1,5 +1,6 @@
-var Convert = require('../../../lib/convert.js');
 fs = require('fs');
+var Convert = require('../../../lib/convert.js');
+
 
 describe("A space-separated file to JSON converter", function() {
   var convert = new Convert();
