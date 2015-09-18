@@ -32,6 +32,7 @@
    "gulp-babel": "latest",
    "gulp-jasmine": "latest",
    "jasmine-reporters": "latest",
+   "jasmine-node": "latest",
    "gulp-eslint": "latest",
    "gulp-task-listing": "latest"
 },
