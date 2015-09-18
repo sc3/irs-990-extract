@@ -1,6 +1,6 @@
 {
   "name": "irs-990-extract",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "Download and extract IRS 990 data to json files.",
   "contributors": [
     {
@@ -35,5 +35,5 @@
    "gulp-eslint": "latest",
    "gulp-task-listing": "latest"
 },
-  "license": "GPLv3"
+  "license": "GPL-3.0"
 }
