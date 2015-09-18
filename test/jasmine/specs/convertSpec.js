@@ -20,5 +20,5 @@ describe("A space-separated file to JSON converter", function() {
 
   it("should convert space-separated data to JSON", function() {
     expect(convert.toJson(outputData)).toEqual(TEST_JSON);
-  })
-})
+  });
+});
