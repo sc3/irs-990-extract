@@ -5,14 +5,17 @@
   "contributors": [
     {
       "name": "Mathew Woodyard",
+      "email": ""
     },
     {
       "name": "Marcin Ufniarz",
+      "email": ""
     },
     {
-      "name": "Sophia Hudson"
+      "name": "Sophia Hudson",
+      "email": ""
     }
-  }],
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/woodrad/irs-990-extract"
