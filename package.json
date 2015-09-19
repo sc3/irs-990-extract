@@ -27,14 +27,13 @@
     "adm-zip": "0.4.7"
   },
   "devDependencies" : {
-   "gulp": "latest",
-   "gulp-debug": "latest",
-   "gulp-babel": "latest",
-   "gulp-jasmine": "latest",
-   "jasmine-reporters": "latest",
-   "jasmine-node": "latest",
-   "gulp-eslint": "latest",
-   "gulp-task-listing": "latest"
+    "gulp": "latest",
+    "gulp-debug": "latest",
+    "gulp-babel": "latest",
+    "gulp-jasmine": "latest",
+    "jasmine-reporters": "latest",
+    "gulp-eslint": "latest",
+    "gulp-task-listing": "latest",
 },
   "license": "GPL-3.0"
 }

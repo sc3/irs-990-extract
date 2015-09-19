@@ -14,9 +14,10 @@ gulp.task('tasks', taskListing);
 /**
  * Lint the project using the `.eslintrc` provided.
  */
-gulp.task('lint', ['clean'],  function() {
+gulp.task('lint', function() {
   var stream = gulp.src([
       "./lib/*.js",
+      "./test/jasmine/specs/*.js",
       "./*.js"
     ])
     .pipe(debug())
@@ -55,5 +56,4 @@ gulp.task('compile', ['lint'], function() {
     .pipe(babel({}))
     .pipe(gulp.dest("./target/babeled"));
   return stream;
-});
 });
