@@ -12,7 +12,8 @@ describe("A file downloader", function() {
              if (err) throw err;
         });
     const DOWNLOAD_DATA =
-        download.getData('http://www.irs.gov/pub/irs-soi/14eofinextract990.zip');
+        download.getData('http://www.irs.gov/pub/irs-soi/14eofinextract990.zip',
+            '../../../data/14eofinextract990.zip');
 
     // Create MD5 hash.
     var md5sum = crypto.createHash('md5');
