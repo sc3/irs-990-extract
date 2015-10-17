@@ -1,4 +1,4 @@
-fs = require('fs');
+var fs = require('fs');
 var crypto = require('crypto');
 var Download = require('../../../lib/download.js');
 
@@ -9,7 +9,7 @@ describe("A file downloader", function() {
     const KNOWN_MD5 =
         fs.readFileSync('../resources/14eofinextract990.zip.MD5SUM',
           'utf8', function read(err, data) {
-             if (err) throw err;
+             if (err) { throw err }
         });
     const DOWNLOAD_DATA =
         download.getData('http://www.irs.gov/pub/irs-soi/14eofinextract990.zip',
