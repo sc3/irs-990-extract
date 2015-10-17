@@ -280,7 +280,7 @@
     "strict": [2, "global"],
 
     // Enforce or disallow variable initializations at definition
-    "init-declarations": [2, "never"],
+    "init-declarations": [2, "always"],
 
     // Disallow the catch clause parameter name being the same as a variable in the outer scope
     "no-catch-shadow": 2, 
