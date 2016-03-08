@@ -23,10 +23,11 @@
   "bugs": {
     "url": "https://github.com/woodrad/irs-990-extract/issues"
   },
-  "dependencies": { 
-    "adm-zip": "0.4.7"
+  "dependencies": {
+    "adm-zip": "0.4.7",
+    "download-file": "0.1.5"
   },
-  "devDependencies" : {
+  "devDependencies": {
     "gulp": "latest",
     "gulp-debug": "latest",
     "gulp-babel": "latest",
@@ -34,6 +35,6 @@
     "jasmine-reporters": "latest",
     "gulp-eslint": "latest",
     "gulp-task-listing": "latest"
-},
+  },
   "license": "GPL-3.0"
 }
