@@ -33,7 +33,7 @@
     "gulp-jasmine": "latest",
     "jasmine-reporters": "latest",
     "gulp-eslint": "latest",
-    "gulp-task-listing": "latest",
+    "gulp-task-listing": "latest"
 },
   "license": "GPL-3.0"
 }
