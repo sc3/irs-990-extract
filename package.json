@@ -26,6 +26,7 @@
   "dependencies": {
     "adm-zip": "0.4.7",
     "array-async": "3.0.0",
+    "csvjson": "1.0.5",
     "download-file": "0.1.5",
     "findit": "2.0.0",
     "forEachAsync": "3.0.0"

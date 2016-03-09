@@ -5,6 +5,8 @@ var perform = process.argv[2];
 var download = require('./lib/download');
 /* Includes unzip functionality */
 var file = require('./lib/unzip');
+/* Includes convert functionality */
+var data = require('./lib/convert');
 /* Stores URLs in an array. */
 var urls;
 
@@ -22,6 +24,8 @@ if(perform === 'download' || perform === 'unzip' || perform === 'convert'){
 	}
 
 	if(perform === 'convert') {
+		console.log("Convert me!")
+		data.convert();
 		/* Need to include this functionality. */
 	}
 
