@@ -10,7 +10,31 @@ https://www.irs.gov/uac/SOI-Tax-Stats-Annual-Extract-of-Tax-Exempt-Organization-
 
 
 ##Download Functionality
-`node app.js <file url> <file url> <file...`
-Example: `node app.js https://www.irs.gov/pub/irs-soi/14eofinextract990.zip https://www.irs.gov/pub/irs-soi/14eofinextract990ez.zip`
+
+`node app.js download <file url> <file url> <file...`
+
+Example: `node app.js download https://www.irs.gov/pub/irs-soi/14eofinextract990.zip https://www.irs.gov/pub/irs-soi/14eofinextract990ez.zip`
+
+##Unzip Functionality
+When unzipping files, the command takes no arguments.  It will look through the data directory and unzip any .zip files it locates.
+
+`node app.js unzip`  
+
+##Convert .dat To .json Functionality
+When converting files, the command takes no arguments.  It will look through the data directory and convert any .dat files it locates. Due to V8 having a string length limit and Node having a default of 512MB memory alloted.  The files are cut into sections of 50,000 lines per file and named in a numberic sequential order. 
+
+`node app.js convert`  
+
+### For files exceeding Node's 512MB memory default.
+
+`node --max-old-space-size=1024 app.js convert` #increase to 1gb
+`node --max-old-space-size=2048 app.js convert` #increase to 2gb
+`node --max-old-space-size=3072 app.js convert` #increase to 3gb
+`node --max-old-space-size=4096 app.js convert` #increase to 4gb
+`node --max-old-space-size=5120 app.js convert` #increase to 5gb
+`node --max-old-space-size=6144 app.js convert` #increase to 6gb
+`node --max-old-space-size=7168 app.js convert` #increase to 7gb
+`node --max-old-space-size=8192 app.js convert` #increase to 8gb
+
 
 Just "Copy Link Location" to your terminal.  This will save the files in your data dirctory under the file name.
