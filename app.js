@@ -13,20 +13,19 @@ var urls;
 if(perform === 'download' || perform === 'unzip' || perform === 'convert'){
 
 	urls = process.argv.slice(3);
-	/* Iterates and downloads each link */
+	// Iterates through and downloads each link.
 	if(perform === 'download') {
 		urls.forEach(download.get);
 	}
-
+	// Unzip files.
 	if(perform === 'unzip') {
 		file.unzip();
 		console.log("Unzip me!");
 	}
-
+	// Converts .dat files to .json
 	if(perform === 'convert') {
 		console.log("Convert me!")
 		data.convert();
-		/* Need to include this functionality. */
 	}
 
 } else {
@@ -34,5 +33,5 @@ if(perform === 'download' || perform === 'unzip' || perform === 'convert'){
 	urls = process.argv.slice(2);
 	urls.forEach(download.get);
 	file.unzip();
-	/* need to include converting functionality */
+	data.convert();
 }
