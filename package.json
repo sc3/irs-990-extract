@@ -18,14 +18,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/woodrad/irs-990-extract"
+    "url": "https://github.com/sc3/irs-990-extract"
   },
   "bugs": {
-    "url": "https://github.com/woodrad/irs-990-extract/issues"
+    "url": "https://github.com/sc3/irs-990-extract/issues"
   },
   "dependencies": {
     "adm-zip": "0.4.7",
-    "download-file": "0.1.5"
+    "array-async": "3.0.0",
+    "download-file": "0.1.5",
+    "findit": "2.0.0",
+    "forEachAsync": "3.0.0"
   },
   "devDependencies": {
     "gulp": "latest",
