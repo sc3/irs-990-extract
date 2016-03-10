@@ -15,6 +15,8 @@ https://www.irs.gov/uac/SOI-Tax-Stats-Annual-Extract-of-Tax-Exempt-Organization-
 
 Example: `node app.js download https://www.irs.gov/pub/irs-soi/14eofinextract990.zip https://www.irs.gov/pub/irs-soi/14eofinextract990ez.zip`
 
+Just "Copy Link Location" to your terminal.  This will save the files in your data dirctory under the file name.
+
 ##Unzip Functionality
 When unzipping files, the command takes no arguments.  It will look through the data directory and unzip any .zip files it locates.
 
@@ -42,6 +44,3 @@ When converting files, the command takes no arguments.  It will look through the
 `node --max-old-space-size=7168 app.js convert` #increase to 7gb
 
 `node --max-old-space-size=8192 app.js convert` #increase to 8gb
-
-
-Just "Copy Link Location" to your terminal.  This will save the files in your data dirctory under the file name.
