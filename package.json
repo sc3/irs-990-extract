@@ -20,16 +20,17 @@
     "type": "git",
     "url": "https://github.com/sc3/irs-990-extract"
   },
+  "scripts": {
+    "start":"node --max-old-space-size=8192 app.js"
+  },
   "bugs": {
     "url": "https://github.com/sc3/irs-990-extract/issues"
   },
   "dependencies": {
     "adm-zip": "0.4.7",
-    "array-async": "3.0.0",
     "csvjson": "1.0.5",
     "download-file": "0.1.5",
-    "findit": "2.0.0",
-    "forEachAsync": "3.0.0"
+    "findit": "2.0.0"
   },
   "devDependencies": {
     "gulp": "latest",

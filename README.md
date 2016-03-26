@@ -8,10 +8,17 @@ https://www.irs.gov/uac/SOI-Tax-Stats-Annual-Extract-of-Tax-Exempt-Organization-
 ## Running
 `node --harmony irs-990-extract.js` downloads and extracts IRS 990 data to `data/`. If `--harmony` is not available, use `gulp compile` to transpile the code to ES5. Run the resulting code with `node target/irs-990-extract.js`.
 
+## Running
+This will download, unzip and convert your data in one go.
+`node app.js <file url> <file url> <file...`
+
+`npm start <file url> <file url> <file...` #Run at 8GB memory allotment
 
 ##Download Functionality
 
 `node app.js download <file url> <file url> <file...`
+
+`npm start download <file url> <file url> <file...` #Run at 8GB memory allotment
 
 Example: `node app.js download https://www.irs.gov/pub/irs-soi/14eofinextract990.zip https://www.irs.gov/pub/irs-soi/14eofinextract990ez.zip`
 
@@ -22,10 +29,15 @@ When unzipping files, the command takes no arguments.  It will look through the 
 
 `node app.js unzip`  
 
+`npm start unzip`  #Run at 8GB memory allotment 
+
+
 ##Convert .dat To .json Functionality
 When converting files, the command takes no arguments.  It will look through the data directory and convert any .dat files it locates. Due to V8 having a string length limit and Node having a default of 512MB memory alloted.  The files are cut into sections of 50,000 lines per file and named in a numberic sequential order. 
 
 `node app.js convert`  
+
+`npm start convert`  #Run at 8GB memory allotment
 
 #### For files exceeding Node's 512MB memory default.
 

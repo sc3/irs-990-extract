@@ -1,5 +1,5 @@
 'use strict';
-// console.dir(process.argv);
+ //console.dir(process.argv);
 var perform = process.argv[2];
 /* Includes download functionality */
 var download = require('./lib/download');
@@ -28,10 +28,17 @@ if(perform === 'download' || perform === 'unzip' || perform === 'convert'){
 		data.convert();
 	}
 
-} else {
-	/* need to add async functionality to allow the files to download, unzip and comvert */	
+} else {	
+	//console.dir(process.argv);
 	urls = process.argv.slice(2);
-	urls.forEach(download.get);
-	file.unzip();
-	data.convert();
+	var downloadPromise = new Promise(function(resolve, reject) {
+		console.log("Starting Download Processs!");
+	});
+	downloadPromise
+		.then(urls.forEach(download.get))
+		.then(console.log("Starting Unzip Process!"))
+		.then(file.unzip())
+		.then(console.log("Starting Convert Process!"))
+		.then(data.convert())
+		.then(console.log("Finished All Tasks!"));
 }
