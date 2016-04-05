@@ -1,6 +1,6 @@
 {
   "name": "irs-990-extract",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Download and extract IRS 990 data to json files.",
   "contributors": [
     {
@@ -21,7 +21,7 @@
     "url": "https://github.com/sc3/irs-990-extract"
   },
   "scripts": {
-    "start":"node --max-old-space-size=8192 app.js"
+    "start": "node --max-old-space-size=8192 app.js"
   },
   "bugs": {
     "url": "https://github.com/sc3/irs-990-extract/issues"

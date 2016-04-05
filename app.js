@@ -31,14 +31,12 @@ if(perform === 'download' || perform === 'unzip' || perform === 'convert'){
 } else {	
 	//console.dir(process.argv);
 	urls = process.argv.slice(2);
-	var downloadPromise = new Promise(function(resolve, reject) {
-		console.log("Starting Download Processs!");
-	});
-	downloadPromise
-		.then(urls.forEach(download.get))
-		.then(console.log("Starting Unzip Process!"))
-		.then(file.unzip())
-		.then(console.log("Starting Convert Process!"))
-		.then(data.convert())
-		.then(console.log("Finished All Tasks!"));
+
+	if(urls.length > 0) {
+		console.log("Your file" + ((urls.length > 1)?"s are":" is") + " being downloaded.");
+		urls.forEach(download.get);
+	} else {
+		console.log("Please specify if you would liike to 'download', 'unzip', or 'convert' your files.")
+	}
+
 }
